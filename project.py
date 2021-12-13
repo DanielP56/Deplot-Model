@@ -21,7 +21,6 @@ def predict_note_authentication(Credit_Score,Age,Tenure,Balance,Num_Product,HasC
   test =  sc.fit_transform([[Credit_Score,Age,Tenure,Balance,Num_Product,HasCrCard,ActiveMember,Estimated_Salary,Geo_France,Geo_Germany,Geo_Spain,Gender_Female,Gender_Male]])
   pred_std = sc.transform([[Credit_Score,Age,Tenure,Balance,Num_Product,HasCrCard,ActiveMember,Estimated_Salary,Geo_France,Geo_Germany,Geo_Spain,Gender_Female,Gender_Male]])
   pred= model.predict(pred_std)
-  #pred=int(model.predict([[Credit_Score,Age,Tenure,Balance,Num_Product,HasCrCard,ActiveMember,Estimated_Salary,Geo_France,Geo_Germany,Geo_Spain,Gender_Female,Gender_Male]]))
   if pred == 1:
     pred = 'Keluar'
   else :
