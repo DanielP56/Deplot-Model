@@ -79,7 +79,5 @@ def main():
     if st.button("Predict"):
         result=predict_note_authentication(Credit_Score,Age,Tenure,Balance,Num_Product,HasCrCard,ActiveMember,Estimated_Salary,Geo_France,Geo_Germany,Geo_Spain,Gender_Female,Gender_Male)
     st.success('The output is {}'.format(result))
-    databaru = pred_std = ([[Credit_Score,Age,Tenure,Balance,Num_Product,HasCrCard,ActiveMember,Estimated_Salary,Geo_France,Geo_Germany,Geo_Spain,Gender_Female,Gender_Male]])
-    st.write(databaru)
 if __name__=='__main__':
     main()
